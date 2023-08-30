@@ -1,0 +1,18 @@
+HTML - Hyper Text Markup Language
+
+<h1></h1> - heading tags
+<h1> - <h6>
+no <h7> tag.
+
+<p> </p> - paragraph tags
+used for separating texts.
+helpful for blind users.
+
+www.lipsum.com - lorem ipsum (to get natural block of text)
+www.broipsum.com
+
+lorem ipsum - format
+
+horizontal format element - <hr /> line
+break - <br /> break the paragraph
+ 
