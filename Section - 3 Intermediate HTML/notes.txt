@@ -1,0 +1,31 @@
+Unordered lists 
+<ul>
+	<li>milk</li>
+	<li>eggs</li>
+</ul> - bullet points
+
+Ordered lists
+
+<ol start="5">
+5.
+6.
+7.
+8.
+
+<ol>
+	<li>milk</li>
+	<li>eggs</li>
+</ol> - numbers
+
+Anchor Elements
+
+<a>This is a link</a>
+<a href="www.google.com">This is a link</a>
+<a draggable=true>This is a link</a>
+
+href, draggable -> attributes
+
+Image tag
+
+src - source
+alt - alternative text description - for blind people using screen readers
