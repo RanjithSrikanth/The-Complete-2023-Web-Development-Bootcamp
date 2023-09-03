@@ -1,0 +1,23 @@
+File paths :
+
+absolute file paths
+relative file paths - shorter
+./dong.png ----> current directory
+../assets/image.png ----> upper folder
+
+./
+../
+
+Boiler Plate
+
+<!doctype html> - tells browser render in html
+<html> </html> - everything should go inside this
+<head> </head> - should not be shown to users, used to render the page correctly, things needed to rener the page.
+<body> </body> - contents of the website
+
+Web hosting - github
+
+location --------------------------Server---------------------------internet
+(internet)                         (Web server)(available 24 hrs)      
+
+process of putting the local files into server is called Web hosting.
