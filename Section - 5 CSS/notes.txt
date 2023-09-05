@@ -1,0 +1,67 @@
+CSS - Cascading Style Sheets
+Styles cascades to the pages like water
+
+How do add a css ?
+inline -----> style attribute ---> 1 ELEMENT
+internal ------> <style> </style> tag ----> 1 WEBPAGE
+external -----------> multipage (separate file)
+
+
+property : value
+
+selector{
+//css
+}
+
+external --> link
+<link rel="stylesheet" href="./style.css" />
+rel --- relationship
+href --- locaion
+
+selectors
+class selector
+.red_heading{
+}
+
+class------>grouping up the items
+
+ID selectors
+#red_heading{
+}
+
+diff bw id vs class
+
+class can be given to many elements
+ID should be unique (used to diffrentiate with other tags)
+eg:
+
+<style>
+h2{
+color: red;
+}
+.ranjith{
+color: blue;
+}
+</style>
+
+<h2 id="ranjith">Hi</h2>
+<h2>Hi</h2>
+<h2>Hi</h2>
+
+attribute selector
+
+p[draggable]{
+color: red;
+} -----> paragraph tag with attribute draggable
+
+p[draggable="false"]{
+color: red; 
+}
+
+Universal selector -----> selects all in page
+*{
+color: red;
+}
+
+
+css specicity ------> section 7
