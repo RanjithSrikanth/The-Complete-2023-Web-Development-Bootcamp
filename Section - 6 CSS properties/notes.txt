@@ -1,0 +1,95 @@
+CSS Properties
+MDN docss -----> Developer documentation
+colorhunt.io -----> palletes
+
+1.Colors - named colors(mdn docs)
+
+h1{
+color: red;
+background-color: blue;
+}
+
+html{
+background-color: pink;
+}
+
+2.Font properties:
+
+text-color
+font-size
+font-weight
+font-family
+
+1px - 1/96 inch
+0.26mm height and width
+
+1pt - 1/72 inch
+0.35mm
+
+1em ---> 100% of the parent
+1rem----> 100% of the root
+
+2rem -- 2*root font size
+2em -- 2*parent font size
+
+font family
+
+font-family: helvetica, sans serif
+comma ---> backup, generic
+
+font-family: "Times new roman", serif;
+
+custom fonts ----- fonts.google.com
+
+make it custom and copy the link, paste in the head section
+
+
+
+text-align:
+h1{
+text-align: center;
+}
+
+center
+left
+right
+
+CSS Inspection ----> chrome developer tools
+Doing changes in the webpage using chrome developer tools, will not change anything the server or files. its just chnaging the local that loaded in our page.
+CSS overview
+
+The CSS Box Model
+
+Margin
+Padding
+Border
+
+border: 10px solid black;
+thickness :
+10px
+
+style :
+solid
+dashed
+
+color :
+black
+red
+
+border-top: 0px;border-width: 0px 10px 20px 30px;
+clockwise direction
+2 values 
+10px 20px;
+1 and 3		2 and 4
+
+padding --> adding space between element and border without changing the element size
+margin ---> adding space outer border
+
+box model has been visualised in the developer tools,
+we can change the values to get know where exact should the element be placed.
+
+
+<div></div> -----> used to make different elements into groups and make it as a single box.
+can be styled together using div.
+act as a container.
+
