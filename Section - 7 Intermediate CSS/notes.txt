@@ -1,0 +1,109 @@
+Speficity and inheritance
+
+multiple css rules conflicting the same html element,
+determine which one higher in hierarchy.
+
+cascade
+
+lower most rule in the file or style gets applied. 
+waterflow model - cascading
+
+1.position
+li{
+color: red;
+color: blue;
+} ----- blue applied
+
+2.specificity
+
+<li id='id-first' class='first' draggable>
+id is the most specific one
+
+4.element
+3.class
+2.attribute
+1.id
+
+3.Type
+
+heirarchy
+1.external css ----> first
+2.internal css ----> next
+3.inline css ----> heigher precidence
+
+3.Importance ----------------------------- Heigher precedence
+
+color: red;
+color: purple !important;
+
+
+-----------------------------------------------------------------------------------------------------------
+
+Combining selectors
+
+1.grouping
+
+selector, selector{
+color: red;
+}
+
+2.child
+
+selector > selector{
+color: firebrick;
+} ---------------- one generation nested, in div
+
+.box > .done{
+    color: firebrick;
+}
+
+3.Decendent selector
+
+selector selector{
+color: red;
+}
+
+anywhere space anywhere inside the class or id
+
+4.chaining
+
+selectorselector
+h1#first.big.heading
+chaining many selectors, super specific
+
+5.Combining combiners
+
+selector selctorselector{
+font-size: 2rem;
+}
+
+------------------------------------------------------------------------------------------------
+
+CSS Positioning
+
+1.Relative
+2.Absolute
+3.Fixed
+4.Static Positioning
+
+static position - default flow of html
+as we add elements it will be added one by one
+
+relative position - position relative to default position
+we can move the element wherever we want by enabling
+position: relative;
+left: 50px; (from left 50px)
+top: 50px; (from top 50px)
+
+absolute positioning - position relative to nearest positioned ancestor or top left corner of the webpage
+
+
+z-index: 0;
+
+decide which one should be on top of the page, 
+z-index with heigher value 100 stays on top of the page.
+
+fixed positioning - position relative to the top left corner of the browser not on web page.
+diff bw absolute and fixed
+
+  
