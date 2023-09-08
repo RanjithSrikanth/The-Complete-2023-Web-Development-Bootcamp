@@ -1,0 +1,92 @@
+CSS Display
+
+1.Inline
+
+<h2>Harry</h2>
+<h2>Potter</h2>
+
+h2{
+display: inline;
+}
+
+Op:
+Harry Potter
+
+Default:
+block - entire full width
+inline-block ----- have width and height
+
+display: None; --- disappear
+
+-------------------------------------------------------------
+Float property - wrapping text
+
+floating img left and right:
+
+img{
+float: left;
+}
+
+if there is footer wraping the floated img, set the clear property so that it will be free from floating of the img.
+
+footer{
+clear: left;
+}
+
+clear: both;
+if 2 floating left and right
+
+have float property only for wrapping text
+
+-----------------------------------------------------------------
+
+Responsive web design
+
+Making a web page responds to the screen size, like desktop, laptop, ipad, mobile.
+
+there are 4 ways of doing this :
+1.media queries
+2.css flexbox
+3.css grid
+4.external frameworks like bootstrap etc..,.
+
+@media (max-width: 600px){
+
+}
+
+
+
+--------------------------------------------------------------------------------------------
+Media Queries - having breakpoints of 
+
+@media (max-width: 600px){
+
+} ----> if screenis less than or equal to 600px then thst section will start working.
+
+
+0px-----------------------------------------------------------------------------------------------------2400px
+|-----------------------------------|
+0px				     600px
+
+@media (max-width: 600px){
+
+}
+
+				     |---------------------------------------------------------------------
+					@media (min-width: 600px){
+
+}
+				     
+
+max-width : maximum width this style will apply
+min-width : minimum width this style will apply
+
+
+
+
+
+
+
+
+
+
