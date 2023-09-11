@@ -1,0 +1,116 @@
+CSS Flexbox:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+b of just intime of recap, have to know this is possible, all we need to do is just refresh how to do it precisely.
+
+
+In olden days table is used, then
+gradually position, float and all used for layout the page.
+
+FLEXBOX , grid are effective ways for layouting in modern web developement.
+
+wrapping all the divs in a div container,add display: flex; gap: 10px;
+
+eg:
+	default
+div - block
+span - inline
+p - block
+img - inline
+
+if we add all these to a container and add flex, everything will be in inline according to respective content size.
+
+by default the flex display property will be in block,
+display: inline-flex;
+
+------------------------------------------------------------------------------------------------------------------------
+
+Flex direction
+
+1.main axis
+2.cross axis
+
+flex-direction: row; ----> main axis is horizontal
+flex-direction: column -----> main axis is vertical
+
+eg: flex-basis: 100px;
+will add height if it sets to column
+add width if it sets to row
+
+by default flex-direction will be set to row i.e, will add the elements next to next in row wise.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Flex Layout
+
+order property:
+
+order: 0; ----> this property is for arranging the child divs which inside the container.
+order: 20;
+
+wrap:
+if in container there is no space, then the remaining elements come down.
+
+flex-wrap: wrap;
+nowrap;
+
+Justify-content:
+
+Its also an property for the parent container
+
+justify-content: left;
+right;
+center;
+space-between;
+space-around;
+space-evenly;
+
+flexbox make itself the mathematics calculations.
+
+
+align-items --- parent container
+it should have the viewport 70:
+height: 70vh;
+align-item: start;
+end;
+stretch;
+center;
+
+reverse-wrap;
+flex-wrap: nowrap;
+align-items: center;
+
+center of the height of the container.
+
+when we set align to wrap, align-content will be used to center the elements, it will cut down the elements to the next line.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Flexbox sizing
+
+shrinking and growing
+
+most of the case it do sizing by default, sometimes we need to customize it.
+
+priority list ---> content width < width < flex-basis < min-width/max-width
+
+default size of flexbox:
+
+max-width = full line of words
+min-width = longest word of the line
+
+flex-grow 1;
+flex-shrink: 1;
+
+grown to entire width and shrink to the min width
+
+default setting
+----------------
+flex-grow 0;
+flex-shrink: 1;
+
+flex-basis: auto -----> alot more space for more content by default, to overcome this set flex-basis: 0 to set equal space;
+
+flex shorthand -----> flex: 1 1 0; ---> grow | shrink | basis
+			    1 0;   ---> grow, shrink | basis
+
+			
