@@ -1,0 +1,100 @@
+appbrewery.github.io/grid-sizing/
+CSS Grid
+used to create 2d layouts.
+flexbox ---------- 1d
+grid ------------2d
+
+combination also possible,
+flexbox inside a box, 
+box inside a grid.
+
+Grid have equal gap in between the containers.
+Flexbox will squish the items into the screen.
+
+grid-template-columns: 1fr 2fr; 1:2
+grid-template-rows: 1fr 1fr; 1:1 equally splitted
+gap: 10px;
+
+---------------------------------------------------------------------
+
+Grid Sizing
+
+sizing our columns and rows
+
+grid-template-columns: 200px 200px;
+grid-template-rows: 100px 200px;
+these fixed sizing in the grid system wont be responsive.
+
+grid-template: 100px 200px / 200px 200px;
+combined ------ rows       / columns
+
+using auto:
+
+grid-template-columns: 200px auto;
+grid-template-rows: 100px auto;
+
+auto in columns - take 100% of browser window size and have 200px in first column all other will be automatically set to column 2
+auto in rows - it doesnot take 100% instead it fit the content into the div.
+
+appbrewery.github.io/grid-sizing/
+
+fractitional sizing - more responsible:
+
+1fr 2fr ; 1:2
+1fr 1fr; equally splitted
+
+min max sizing:
+200px minmax(800px, 400px) ----> starts with 800px and wont go less than 400px, used for image and all to not affect the scaling, etc..,.
+
+repeat: 
+row: repeat(8, 100px) - 1fr 1fr 1fr 8times, eg : chess board
+column : repeat(8, 100px)
+
+if there is chance of getting more rows or columns in future, 
+grid-auto-rows: 300;
+grid-auto-columns : 300px;
+
+its hard to know behind the working of flexbox or grid, use chrome developer tools for this.
+
+in chrome developer tools, after clicking the element, select grid option.
+
+github test exercise :
+/* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
+
+.grid-container {
+display: grid;
+grid-template-columns: auto 400px minmax(200px, 500px);
+grid-template-rows: 1fr 1fr 2fr;
+grid-auto-rows: 50px;
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+Grid item placement:
+
+Outer ---- grid container
+inner ---- grid items
+grid cell
+controlling grid lines ---- gap: 10px;
+
+Grid: --- lines, tracks, cell, container, items.
+
+.container{
+height: 100vp;
+} ---- by default grid height would take up only based on the content.
+
+grid-column property ----> grid-column-start , grid-column-end
+using order property for the allignment of inside the grid similar to flexbox.  
+ 
+.astronaut {
+    grid-column-start: 1;
+    background-color: #03989E;
+    order: 1;
+    grid-column-end: 3;
+}
+
+appbrewery.github.io/gridgarden/
+
+
+
+
