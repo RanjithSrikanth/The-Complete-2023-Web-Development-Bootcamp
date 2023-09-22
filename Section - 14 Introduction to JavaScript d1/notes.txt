@@ -1,0 +1,55 @@
+JAVASCRIPT -----> interpreted programming language
+
+early days even simple calculations sent to server and calculations made on the server, it will return thge web page,
+netscape wants to run the calculations on the browser itself without server, ---> scripting languages
+
+one and only lang that supported by all the browsers.
+
+alert("hello");
+fn	msg    end
+prompt("Whats ur name ?");
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Data types:
+string
+numbers
+boolean --> true false
+
+typeof() 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Variables:
+
+var myName = "ranjith";
+myName = "hello"; ---> replace the var not create a new variable
+
+var myname = prompt("Whats ur name ? ")
+alert(myname)
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Variable naming:
+
+no numbers starting with
+only numbers alphabets $ _ will be used
+camelcase preffered -- camelCase - head is lower than humps.
+no space in between
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+String Concetination:
+
+var msg = "hello";
+var name = "Ranjith";
+
+alert(msg + " " +name);
+
+word = "ranjith";
+word.length;
+7
+
+
+
+var tweet = prompt("Enter tweet : ");
+len = tweet.length;
+alert("You have written " + len + " of 280 characters. and you have " + (280-len) + " more." )
+
