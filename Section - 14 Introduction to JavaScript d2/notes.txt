@@ -1,0 +1,26 @@
+Slicing:
+
+cutting of characters from a string.
+
+var myname = "ranjith";
+myname.slice(0,3);
+
+ran -- from 0 till 2, not include 3.
+
+var tweet = prompt("Enter tweet : ")
+alert("Too much characters : " + tweet.slice(0, 141)+ " is only valid")
+
+---------------------------------------------------------------------------------------------------------
+
+case changing:
+
+word.toUpperCase()
+word.toLowerCase()
+
+var name = prompt("Enter name : ");
+var lc = name.toLowerCase();
+var uc = name.toUpperCase();
+alert("Hello " + uc.slice(0, 2) + lc.slice(2, ));
+
+--------------------------------------------------------------------------------------------------------
+
