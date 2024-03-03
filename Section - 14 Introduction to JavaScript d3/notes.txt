@@ -1,0 +1,78 @@
+create a dog to human age converter
+
+human age = (dog age - 2) * 4 + 21
+
+var dog_age = prompt('Enter dog age : ')
+var human_age = ((dog_age - 2) * 4) + 21
+alert("The calculated human age is " + human_age)
+
+Increment and Decrement
+-----------------------
+
+
+Functions:
+
+creating a fn:
+
+function getmilk() {
+alert('move right')
+alert('move left')
+}
+
+calling the fn:
+
+getMilk();
+
+console.log ---> printing
+
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+   reachRightTop();
+}
+
+function reachRightTop(){
+   move();
+   move();
+   move();
+   move();
+   turnLeft();
+   move();
+   move();
+   move();
+   move();
+}
+
+
+
+
+function getMilk() {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+}
+
+
+---------------------------------------------------------------------------------
+
+function bmiCalculator(WEIGHT, HEIGHT){
+    return (WEIGHT / (HEIGHT * HEIGHT))
+}
