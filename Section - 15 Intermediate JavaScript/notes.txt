@@ -1,0 +1,161 @@
+Random number generation
+-------------------------
+
+
+var n = Math.random();
+generate a number between 0 - 0.999999999 (16 decimal digit)
+for eg : 1 - 6 (dice)
+generated number * 6
+var n = Math.random();
+console.log(Math.floor(n*6));
+
+for not getting 0, add 1 with floor fn.
+
+Love calculator
+--------------
+
+prompt('1st person : ');
+prompt('2nd person : ');
+var percentage = Math.random();
+alert(Math.floor(percentage * 101));
+
+control flow statements
+------------------------
+
+syntax :
+if (track === "clear"){
+goStraight();
+}
+else {
+turnRight();
+}
+
+=== - eqaul to
+!== - not equal
+
+== - doesnot care about the data types, but in === it will check for the exact equality.
+
+
+&& --> AND
+|| --> OR
+!  --> NOT
+
+-----------------------------------------
+
+JavaScript Arrays
+
+var egg_array = [1,2,3,4,5];
+eggs.length
+
+eggs.includes(item) ---> returns(true) boolean if item exixts  in Array
+
+var guestList = ['ranjith', 'sujay', 'siva', 'vishwaa', 'vijay']
+var name = prompt("Enter your name : ")
+if (guestList.includes(name) === true){
+    alert("Welcome")
+}
+else{
+    alert("Sorry, you cant enter")
+}
+
+-----------------------------------------------------------
+
+python append ----> push
+output = []
+output.push[ranjith]
+remove ----> pop
+
+
+var op = [];
+var count = 1;
+function fizzbuzz(){
+    if ((count % 3 == 0) && (count % 5 == 0)){
+        op.push('FizzBuzz');
+    }
+    else if (count % 3 == 0){
+        op.push('Fizz');
+    }
+    else if(count % 5 == 0){
+        op.push('Buzz');
+    }
+    else{
+        op.push(count);
+    }
+    count++;
+    console.log(op)
+}
+
+
+------------------------------------------------------------------------
+
+function whosPaying(names) {
+    //Write your code here.
+    var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+    var selected_name = Math.floor((Math.random() * 6));
+    var strr = names[selected_name] + ' is going to buy lunch today!'
+    return strr;
+    }
+
+-------------------------------------------------------------
+
+var op = [];
+var count = 1;
+function fizzbuzz(){
+    while(count <= 100){
+    if ((count % 3 == 0) && (count % 5 == 0)){
+        op.push('FizzBuzz');
+    }
+    else if (count % 3 == 0){
+        op.push('Fizz');
+    }
+    else if(count % 5 == 0){
+        op.push('Buzz');
+    }
+    else{
+        op.push(count);
+    }
+    count++;    
+    }   
+    console.log(op)
+}
+
+------------------------------------------------
+
+var count = 99;
+function beer(){
+    while(count >= 0){
+        if (count == 0){
+            console.log('No more bottles of beer on the wall, no more bottles of beer, go to the store and buy some more, 99 bottles of beer on the wall.');
+        }
+        else if(count == 1){
+            console.log(count + ' bottle of beer on the wall,' + count + ' bottle of beer. Take one down and pass it around, no bottles on the wall.' )
+        }
+        else{
+            console.log(count + ' bottles of beer on the wall,' + count + ' bottles of beer. Take one down and pass it around, '+ count - 1 + ' bottles on the wall.' )
+        }
+        count--;
+    }
+}
+
+
+------------------------------------------------------------------------------------
+
+function fs(n){
+    var fss = [0, 1];
+    if (n === 1){
+        return [0];
+    }
+    else if(n === 2){
+        return [0, 1];
+    }
+    else{
+        for(var i = 2; i < n; i++){
+            fss.push(fss[i-1] + fss[i-2]);
+        }
+        return fss;
+    }
+}
+
+fs(7);
+
+---------------------------------------------------------
