@@ -1,0 +1,140 @@
+DOM - The Document Object Model
+
+Inline JS:
+onload() --> is attr used to display after loading
+<body onload="alert('Hello');">
+avoid inline js --> difficult to debug, bad practise
+
+internal js:
+    <script type="text/javascript">
+        alert('Hello');
+    </script>
+
+external js:
+
+<script src="">
+placing a script tag is very crucial	
+always place a js script link in end of the doc, just above the </body>
+
+when we have style.css in head,it loaded first, browser will start from top
+
+the task of converting the webpage html code to a DOM tree is done by the browser when load the page, it convert the web page structure elements into a tree.
+
+html is inside a object called  document, --> Document object Model.
+
+document; --> all the html code.
+document.firstElementChild;
+document.firstElementChild.firstElementChild;
+
+lastElementchild;
+save it using a variable and can manipulate it.
+
+innerHTML ---> to change the content of the tag.
+
+var titlee = document.firstElementChild.lastElementChild.firstElementChild;
+titlee.innerHTML= "Ranjith";
+
+each element in DOM has :
+properties and 
+methods
+
+car ---> object
+properties :
+color
+no.of.tyres
+no.of.dooors
+
+methods: (that can do something)
+brake()
+drive()
+park()
+
+getter - getting the property 
+car.color; --> to get the value of property
+car -> obj
+color -> prperty
+
+setting the property
+setters
+car.noofdoors = 4;
+
+methods 
+car.drive()
+
+drive is a method, that is, it is associated to object called car;
+thats the diff between method and a function.
+
+
+document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild.innerHTML = "Angela"; 
+
+select elements using classes and ids
+
+getElementsbyTagname(); --> select all the elements --> returns a array
+
+document.getElementsByTagname("li")[2].style.color = "purple";
+
+getElementsbyClassname()
+
+document.getElementsByClassName("btn")[0].innerHTML = "Dont select me";
+
+getElementById() ----> single element bcoz all ids are unique
+
+
+document.querySelector("") --> string inside this will be a selector --> return single
+can have id, h1, class etc..,.
+document.querySelector("#title") //id
+document.querySelector(".jhfg") //class
+
+can also combine the selectors for more specific selector.
+
+document.querySelector("li a") --> a inside li
+
+var goo = document.querySelector("li a");
+goo.style.color = "red";
+
+
+
+Manipulating and changing the styles of HTML elements with JS
+------------------------------------------------------------------------------------
+
+html dom style sheet
+style.color
+style.fontSize
+
+unlike css js follows camelcasing in style
+
+var b = document.querySelector("button");
+b.style.backgroundColor = "yellow";
+
+change the webpage dynamically, i.e-> without changing the code in html and css
+
+----------------------------------------------------------------------------------------
+
+Separation of concerns : structure vs style vs behaviour
+html --> content
+css --> style
+js --> behavior
+
+classList
+----------
+methods :
+1.add
+2.remove
+3.toggle
+
+eg:
+var b = document.qs("button"); --> class btn and its a element
+
+b.classList returns the classes associated with it.
+b.classList.add("invisible")
+.invisible{
+visiblity : hidden;
+}
+
+
+document.querySelector("h1").classList.add("huge");
+
+manipulating the attributes
+.attributes
+.getAttribute()
+.setAttribute("href" //from, ""//to)
